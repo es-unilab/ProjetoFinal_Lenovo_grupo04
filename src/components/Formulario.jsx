@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-// Defina o esquema de validação
+// Define o esquema de validação
 const schema = yup.object().shape({
   nome: yup.string().required('Nome é obrigatório'),
   email: yup.string().email('E-mail inválido').required('E-mail é obrigatório'),
